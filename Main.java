@@ -227,6 +227,7 @@ class Main {
     String name;
     int intScan;
 
+    System.out.print("\033[H\033[2J"); //clears the terminal
     //Starts the story and prompts the user for their name
     System.out.println("Hello there!");
     delay();
@@ -455,6 +456,7 @@ class Main {
     System.out.println("Press [RETURN] to challenge " + enemy1.getName() + " and begin the quarterfinal match!");
     sc.nextLine();
     System.out.print("\033[H\033[2J");
+    System.out.println("Quarterfinal Opponent: Coach Witt!");
     System.out.println("Why weren't you at practice? Physics club? Likely story.");
     delay();
     System.out.println(enemy1.getName() + " wants to fight!");
@@ -656,6 +658,7 @@ class Main {
       System.out.println("Press [RETURN] to challenge " + enemy2.getName() + " and begin the semifinal match!");
       sc.nextLine();
       System.out.print("\033[H\033[2J");
+      System.out.println("Semifinal Opponent: Mr. White!");
       System.out.println("If I win, I get to take another point off of your test! It makes me feel so good!");
       delay();
       System.out.println(enemy2.getName() + " wants to fight!");
@@ -844,6 +847,7 @@ class Main {
       System.out.println("Press [RETURN] to challenge " + enemy3.getName() + " and begin the final match!");
       sc.nextLine();
       System.out.print("\033[H\033[2J");
+      System.out.println("FINAL Opponent: Mr. Jaggedzinski!");
       System.out.println("Hey, you said my name wrong!");
       delay();
       System.out.println(enemy3.getName() + " wants to fight!");
